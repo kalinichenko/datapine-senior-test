@@ -1,0 +1,26 @@
+.charts__item
+  position: relative
+
+
+.charts-item-container
+  position: relative
+  width: 100%
+
+.charts-item-container__chart
+  height: 200px
+
+.charts-item-container__link
+  position: absolute
+  top: 0
+  height: 100%
+  width: 100%
+  &:hover
+    box-shadow: 0px 0px 10px 5px #888888
+
+.chart
+  @include hcenter
+  width: 50%
+
+.chart__type-changer
+  margin: $pad auto $pad
+  display: block

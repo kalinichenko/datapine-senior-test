@@ -1,0 +1,5 @@
+<select class='chart__type-changer'>
+  <% _.each(types, function(type){ %>
+    <option value="<%= type.id %>" <% if (chart.type === type.id) { print('selected'); } %> ><%= type.name %></option>
+  <% }) %>
+</select>
