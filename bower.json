@@ -8,7 +8,6 @@
     "underscore": "~1.5.2",
     "backbone": "~1.1.0",
     "modernizr": "~2.6.2",
-    "layoutmanager": "~0.9.5",
     "highcharts-release": "~4.0.4",
     "backbone.marionette": "~2.3.2",
     "normalize.css": "~3.0.2"

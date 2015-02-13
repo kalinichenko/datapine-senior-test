@@ -3,17 +3,13 @@
   margin-bottom: $pad
   background-color: #f2f2f2
 
-.main-menu
-  margin: 0
-
 .main-menu-list
-  list-style: none
-  margin: 0
+  @include no-bullet
+  @include horizontal-list-container
   padding-left: $pad
-  @include clearfix
 
 .main-menu li
-  float: left
+  @include horizontal-list-item
   margin-right: 1.65em
 
 .main-menu-list__item
@@ -26,3 +22,4 @@
 
 .main-menu-list__item--current
   color: rgba(0,0,0,0.4)
+
