@@ -83,6 +83,7 @@ define([
 
   var ChartLayoutView = Marionette.LayoutView.extend({
     template: _.template(chartLayoutTmpl),
+    className: 'grid grid-pad',
 
     regions: {
       chart: '.chart',

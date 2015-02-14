@@ -1,11 +1,33 @@
 $pad: 50px
 
-@mixin clearfix
-  &:after
-    content: ""
-    display: table
-    clear: both
+$header-height: 80px
+$footer-height: 30px
 
 @mixin hcenter
   margin-left: auto
   margin-right: auto
+
+a
+  color: black
+  &:hover
+    color: #f14e32
+    text-decoration: underline
+
+body
+  background-image: url("/images/body.jpg")
+
+
+.header
+  height: $header-height
+
+.footer
+  position: absolute
+  height: $footer-height
+  bottom: 0
+
+.content
+  position: absolute
+  top: $header-height
+  bottom: $footer-height
+  width: 100%
+  background-color: white
