@@ -1,19 +1,10 @@
-.header
-  padding: 30px 0
-
 .main-menu-list
   @include no-bullet
   @include horizontal-list-container
   padding-left: $pad
-
-.main-menu li
-  @include horizontal-list-item
-  margin-right: 1.65em
-
-.main-menu-list__item
-  display: block
-  text-decoration: none
-
-.main-menu-list__item--current
-  color: #f14e32
+  &__item
+    @include horizontal-list-item
+    margin-right: 1.65em
+  &__link--current
+    color: #f14e32
 

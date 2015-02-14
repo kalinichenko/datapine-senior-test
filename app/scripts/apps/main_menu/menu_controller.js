@@ -14,8 +14,8 @@ define(['app',
     template: _.template(mainMenuTmpl),
     tagName: 'ul',
     ui: {
-      'homeItem': '.main-menu-list__item--home',
-      'aboutItem': '.main-menu-list__item--about'
+      'homeItem': '.js-main-menu-home',
+      'aboutItem': '.js-main-menu-about'
     },
     triggers: {
       'click @ui.homeItem': 'chart:list',
@@ -25,8 +25,12 @@ define(['app',
       'change:current': 'currentChanged'
     },
     currentChanged: function() {
-      this.$('.main-menu-list__item--current').removeClass('main-menu-list__item--current');
-      this.$('.main-menu-list__item--' + this.model.get('current')).addClass('main-menu-list__item--current');
+      this.$('.main-menu-list__link--current')
+        .removeClass('main-menu-list__link--current')
+        .addClass('main-menu-list__link');
+      this.$('.js-main-menu-' + this.model.get('current'))
+        .removeClass('main-menu-list__link')
+        .addClass('main-menu-list__link--current');
     }
 
   });
