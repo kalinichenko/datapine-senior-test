@@ -36,16 +36,17 @@ define(['app',
       var mainMenuView = new MainMenuView({
         model: mainMenuModel
       });
-      mainMenuView.on('chart:list', function(childView) {
+      mainMenuView.on('chart:list', function() {
         App.commands.execute('chart:list');
-        mainMenuModel.set('current', 'home');
       });
-      mainMenuView.on('about:view', function(childView) {
+      mainMenuView.on('about:view', function() {
         App.commands.execute('about:view');
-        mainMenuModel.set('current', 'about');
       });
 
       App.menu.show(mainMenuView);
+    },
+    setCurrent: function(name) {
+      mainMenuModel.set('current', name);
     }
   };
 });

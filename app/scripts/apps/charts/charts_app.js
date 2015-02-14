@@ -14,11 +14,13 @@ define(['app',
   var API = {
     list: function() {
       require(['apps/charts/charts_controller'], function(Controller) {
+        App.commands.execute('main-menu:current', 'home');
         Controller.list();
       });
     },
     view: function(id) {
       require(['apps/charts/charts_controller'], function(Controller) {
+        App.commands.execute('main-menu:current', 'home');
         Controller.view(id);
       });
     }

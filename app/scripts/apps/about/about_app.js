@@ -12,6 +12,7 @@ define(['app',
   var API = {
     view: function() {
       require(['apps/about/about_controller'], function(Controller) {
+         App.commands.execute('main-menu:current', 'about');
         Controller.view();
       });
     }
