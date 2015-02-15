@@ -12,5 +12,14 @@
     "backbone.marionette": "~2.3.2",
     "normalize.css": "~3.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "sinon": "http://sinonjs.org/releases/sinon-1.12.2.js",
+    "chai": "~2.0.0"
+  },
+  "exportsOverride": {
+    "sinon": {
+      "js": "index.js"
+    }
+  }
 }
